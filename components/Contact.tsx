@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Linkedin, Github } from 'lucide-react';
+import { Mail, Phone, Send, Linkedin } from 'lucide-react';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
@@ -13,9 +13,8 @@ export default function Contact() {
     setLoading(true);
     // Simulate submit
     await new Promise((r) => setTimeout(r, 1000));
-    setSent(true);
     setLoading(false);
-    setForm({ name: '', email: '', subject: '', message: '' });
+    setSent(true);
   };
 
   return (
@@ -34,9 +33,8 @@ export default function Contact() {
 
             {[
               { icon: <Mail size={18} color="#2563eb" />, text: 'faizannaeem095@gmail.com', href: 'mailto:faizannaeem095@gmail.com' },
-              { icon: <Linkedin size={18} color="#2563eb" />, text: 'linkedin.com/in/faizan-naeem-', href: 'https://linkedin.com/in/faizan-naeem-' },
+              { icon: <Linkedin size={18} color="#2563eb" />, text: 'linkedin.com/in/faizan-naeem-', href: 'https://www.linkedin.com/in/faizan-naeem-/', external: true },
               { icon: <Phone size={18} color="#2563eb" />, text: '0309 4860634', href: 'tel:03094860634' },
-
             ].map((item) => (
               <div key={item.text} style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 20 }}>
                 <div style={{
@@ -53,7 +51,14 @@ export default function Contact() {
                   {item.icon}
                 </div>
                 {item.href ? (
-                  <a href={item.href} style={{ fontSize: 14, color: '#a0a0a0', textDecoration: 'none' }} onMouseOver={(e) => (e.currentTarget.style.color = '#fff')} onMouseOut={(e) => (e.currentTarget.style.color = '#a0a0a0')}>
+                  <a
+                    href={item.href}
+                    target={item.external ? '_blank' : undefined}
+                    rel={item.external ? 'noopener noreferrer' : undefined}
+                    style={{ fontSize: 14, color: '#a0a0a0', textDecoration: 'none' }}
+                    onMouseOver={(e) => (e.currentTarget.style.color = '#fff')}
+                    onMouseOut={(e) => (e.currentTarget.style.color = '#a0a0a0')}
+                  >
                     {item.text}
                   </a>
                 ) : (
@@ -61,18 +66,6 @@ export default function Contact() {
                 )}
               </div>
             ))}
-
-            <div style={{ borderTop: '1px solid #2a2a2a', paddingTop: 24, marginTop: 8 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 600, color: '#fff', marginBottom: 16 }}>Connect with me</h3>
-              <div style={{ display: 'flex', gap: 12 }}>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
-                  <Linkedin size={18} />
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
-                  <Github size={18} />
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Right - Form */}
