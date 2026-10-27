@@ -1,33 +1,15 @@
-import { Award, ExternalLink } from 'lucide-react';
+import { Award } from 'lucide-react';
 
 const certs = [
   {
     title: 'AI in Software Testing (Manual & Automation)',
-    issuer: 'Hands-on AI-driven Test Generation & Defect Detection',
-    credentialId: 'ISTQB-CTFL-2021-12345',
-    year: '2021',
-    url: '#',
+    issuer: 'Hands-on training in applying Artificial Intelligence techniques to both manual and automated testing workflows, covering AI-driven test generation, smart defect detection, and automation strategy.',
+    year: 'Certified',
   },
   {
-    title: 'C++ Programming (OOP & Data Structures)',
-    issuer: 'Core Fundamentals, OOP & Logical Problem-Solving',
-    credentialId: 'SEL-PRO-2022-67890',
-    year: '2022',
-    url: '#',
-  },
-  {
-    title: 'Automation Framework Design (Playwright & Playwright MCP)',
-    issuer: 'End-to-End Scalable Test Frameworks',
-    credentialId: 'AWS-CCP-2023-11223',
-    year: '2023',
-    url: '#',
-  },
-  {
-    title: 'Associate Degree in Business Management (ADP)',
-    issuer: 'Riphah International University (2019-2021)',
-    credentialId: 'CAT-2023-44556',
-    year: '2023',
-    url: '#',
+    title: 'C++ Programming',
+    issuer: 'Core programming fundamentals including data structures, object-oriented concepts, and logical problem-solving.',
+    year: 'Certified',
   },
 ];
 
@@ -43,7 +25,7 @@ export default function Certifications() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 32 }} className="cert-grid">
           {certs.map((cert) => (
-            <div key={cert.credentialId} className="cert-card">
+            <div key={cert.title} className="cert-card">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
                 <div style={{
                   width: 40,
@@ -57,22 +39,11 @@ export default function Certifications() {
                 }}>
                   <Award size={20} color="#2563eb" />
                 </div>
-                <span style={{ fontSize: 13, color: '#666' }}>{cert.year}</span>
+                <span style={{ fontSize: 13, color: '#2563eb', fontWeight: 600 }}>{cert.year}</span>
               </div>
 
-              <h3 style={{ fontSize: 16, fontWeight: 700, color: '#fff', marginBottom: 6 }}>{cert.title}</h3>
-              <p style={{ fontSize: 13, color: '#666', marginBottom: 16 }}>{cert.issuer}</p>
-
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontSize: 12, color: '#555', fontFamily: 'JetBrains Mono, monospace' }}>{cert.credentialId}</span>
-                <a
-                  href={cert.url}
-                  style={{ color: '#2563eb', display: 'flex', alignItems: 'center' }}
-                  aria-label="View certificate"
-                >
-                  <ExternalLink size={15} />
-                </a>
-              </div>
+              <h3 style={{ fontSize: 17, fontWeight: 700, color: '#fff', marginBottom: 8 }}>{cert.title}</h3>
+              <p style={{ fontSize: 13, color: '#999', lineHeight: 1.6 }}>{cert.issuer}</p>
             </div>
           ))}
         </div>
