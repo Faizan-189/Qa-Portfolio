@@ -1,47 +1,47 @@
 'use client';
 import { useState } from 'react';
 
-const categories = ['All Tools', 'Automation', 'API Testing', 'Performance', 'CI/CD', 'Management', 'Languages'];
+const categories = ['All Tools', 'Testing Tools', 'Mobile & Automation', 'Project Management', 'Languages'];
 
 const tools: { name: string; category: string }[] = [
-  { name: 'Selenium WebDriver', category: 'Automation' },
-  { name: 'Playwright', category: 'Automation' },
-  { name: 'Playwright MCP', category: 'Automation' },
-  { name: 'Claude Code (AI Testing)', category: 'Automation' },
-  { name: 'Antigravity (AI Automation)', category: 'Automation' },
-  { name: 'Cypress', category: 'Automation' },
-  { name: 'Appium', category: 'Automation' },
-  { name: 'TestNG', category: 'Automation' },
-  { name: 'JUnit', category: 'Automation' },
-  { name: 'PyTest', category: 'Automation' },
-  { name: 'Postman', category: 'API Testing' },
-  { name: 'RestAssured', category: 'API Testing' },
-  { name: 'Newman', category: 'API Testing' },
-  { name: 'SoapUI', category: 'API Testing' },
-  { name: 'JMeter', category: 'Performance' },
-  { name: 'LoadRunner', category: 'Performance' },
-  { name: 'Jenkins', category: 'CI/CD' },
-  { name: 'GitHub Actions', category: 'CI/CD' },
-  { name: 'GitLab CI', category: 'CI/CD' },
-  { name: 'Docker', category: 'CI/CD' },
-  { name: 'JIRA', category: 'Management' },
-  { name: 'Linear', category: 'Management' },
-  { name: 'Trello', category: 'Management' },
-  { name: 'TestRail', category: 'Management' },
-  { name: 'Zephyr', category: 'Management' },
-  { name: 'Git', category: 'Management' },
-  { name: 'Confluence', category: 'Management' },
-  { name: 'Java', category: 'Languages' },
-  { name: 'Python', category: 'Languages' },
-  { name: 'JavaScript', category: 'Languages' },
-  { name: 'SQL', category: 'Languages' },
+  { name: 'Playwright', category: 'Testing Tools' },
+  { name: 'Playwright MCP', category: 'Mobile & Automation' },
+  { name: 'Claude Code', category: 'Testing Tools' },
+  { name: 'Antigravity', category: 'Testing Tools' },
+  { name: 'Postman', category: 'Testing Tools' },
+  { name: 'JMeter', category: 'Testing Tools' },
+  { name: 'Appium', category: 'Mobile & Automation' },
+  { name: 'Jira', category: 'Project Management' },
+  { name: 'Trello', category: 'Project Management' },
+  { name: 'Linear', category: 'Project Management' },
   { name: 'C++', category: 'Languages' },
 ];
 
-const methodologies = {
-  'Testing Types': ['Functional Testing', 'Regression Testing', 'Smoke & Sanity Testing', 'Integration Testing', 'UAT Coordination'],
-  'Methodologies': ['Agile/Scrum', 'Waterfall', 'Risk-Based Testing', 'Shift-Left Testing', 'Exploratory Testing'],
-  'Frameworks': ['Page Object Model (POM)', 'Data-Driven Testing', 'Keyword-Driven Testing', 'Behavior-Driven Dev (BDD)', 'Test-Driven Dev (TDD)'],
+const technicalSkills = {
+  'Automation & Manual Testing': [
+    'Automation Framework Design',
+    'Functional Testing',
+    'Regression Testing',
+    'Smoke & Sanity Testing',
+    'Exploratory Testing',
+    'End-to-End Testing (E2E)',
+  ],
+  'API, Mobile & Web QA': [
+    'REST API Testing & Postman',
+    'Request/Response Validation',
+    'Mobile App Testing',
+    'Cross-Browser Testing',
+    'UI/UX Testing',
+    'User Acceptance Testing (UAT)',
+  ],
+  'Management & Analysis': [
+    'Test Case Design & Planning',
+    'Test Documentation & Bug Reporting',
+    'Root Cause Analysis',
+    'Bug Reproduction',
+    'Console & Network Log Analysis',
+    'Agile/Scrum',
+  ],
 };
 
 export default function Tools() {
@@ -57,7 +57,7 @@ export default function Tools() {
         <h2 style={{ fontSize: 40, fontWeight: 800, marginBottom: 8 }}>Tools & Tech Stack</h2>
         <div className="section-accent" style={{ marginBottom: 16 }} />
         <p style={{ fontSize: 15, color: '#888', marginBottom: 48, maxWidth: 600 }}>
-          Comprehensive toolkit for test automation, API validation, performance testing, and continuous integration.
+          Testing tools, platforms, and technical methodologies directly utilized across QA workflows.
         </p>
 
         {/* Filter tabs */}
@@ -74,7 +74,7 @@ export default function Tools() {
         </div>
 
         {/* Tools grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 12, marginBottom: 56 }} className="tools-grid">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginBottom: 56 }} className="tools-grid">
           {filtered.map((tool) => (
             <div key={tool.name} className="tool-chip">
               {tool.name}
@@ -89,9 +89,9 @@ export default function Tools() {
           borderRadius: 12,
           padding: 32,
         }}>
-          <h3 style={{ fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 28 }}>Testing Methodologies</h3>
+          <h3 style={{ fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 28 }}>Technical Skills & QA Competencies</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }} className="methods-grid">
-            {Object.entries(methodologies).map(([title, items]) => (
+            {Object.entries(technicalSkills).map(([title, items]) => (
               <div key={title}>
                 <h4 style={{ fontSize: 14, fontWeight: 600, color: '#2563eb', marginBottom: 14 }}>{title}</h4>
                 <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -108,13 +108,13 @@ export default function Tools() {
       </div>
 
       <style>{`
-        .tools-grid { grid-template-columns: repeat(6, 1fr) !important; }
+        .tools-grid { grid-template-columns: repeat(4, 1fr) !important; }
         .methods-grid { grid-template-columns: repeat(3, 1fr) !important; }
         @media (max-width: 1024px) {
-          .tools-grid { grid-template-columns: repeat(4, 1fr) !important; }
+          .tools-grid { grid-template-columns: repeat(3, 1fr) !important; }
         }
         @media (max-width: 768px) {
-          .tools-grid { grid-template-columns: repeat(3, 1fr) !important; }
+          .tools-grid { grid-template-columns: repeat(2, 1fr) !important; }
           .methods-grid { grid-template-columns: 1fr !important; }
         }
         @media (max-width: 480px) {
