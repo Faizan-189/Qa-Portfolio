@@ -4,10 +4,10 @@ import { Clock, ChevronDown, ChevronUp } from 'lucide-react';
 
 const projects = [
   {
-    title: 'E-Commerce Platform Testing',
+    title: 'Fintech & Multi-Domain QA (SoftMind)',
     duration: '8 months',
-    client: 'Major Retail Company',
-    description: 'Led end-to-end testing for a large-scale e-commerce platform handling 100K+ daily transactions.',
+    client: 'SoftMind Solutions',
+    description: 'Led end-to-end quality assurance across Fintech, Dental Practice Management, Real Estate, and Art platforms.',
     metrics: [
       { value: '156', label: 'Bugs Found', color: '#2563eb' },
       { value: '12', label: 'Critical', color: '#ef4444' },
@@ -22,10 +22,10 @@ const projects = [
     },
   },
   {
-    title: 'Healthcare Management System QA',
+    title: 'AI-Assisted Chatbot & Automation Suite',
     duration: '6 months',
-    client: 'Healthcare Provider',
-    description: 'Quality assurance for HIPAA-compliant patient management system with strict regulatory requirements.',
+    client: 'AI & Conversational Systems',
+    description: 'Used Claude Code and Playwright for AI-assisted automation, testing Chatbot conversational flows and failure scenarios.',
     metrics: [
       { value: '89', label: 'Bugs Found', color: '#2563eb' },
       { value: '8', label: 'Critical', color: '#ef4444' },
@@ -40,10 +40,10 @@ const projects = [
     },
   },
   {
-    title: 'Mobile Banking App Testing',
+    title: 'Airport Management Web Platform QA',
     duration: '10 months',
-    client: 'FinTech Startup',
-    description: 'Complete testing lifecycle for iOS and Android banking application with real-time transaction processing.',
+    client: 'Mobit Solutions',
+    description: 'Comprehensive manual and functional testing on airport check-in, scheduling, and operational modules.',
     metrics: [
       { value: '134', label: 'Bugs Found', color: '#2563eb' },
       { value: '18', label: 'Critical', color: '#ef4444' },

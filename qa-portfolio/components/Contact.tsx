@@ -35,6 +35,7 @@ export default function Contact() {
             {[
               { icon: <Mail size={18} color="#2563eb" />, text: 'faizannaeem095@gmail.com', href: 'mailto:faizannaeem095@gmail.com' },
               { icon: <Linkedin size={18} color="#2563eb" />, text: 'linkedin.com/in/faizan-naeem-', href: 'https://linkedin.com/in/faizan-naeem-' },
+              { icon: <Phone size={18} color="#2563eb" />, text: '0309 4860634', href: 'tel:03094860634' },
 
             ].map((item) => (
               <div key={item.text} style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 20 }}>

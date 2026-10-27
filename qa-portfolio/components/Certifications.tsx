@@ -2,29 +2,29 @@ import { Award, ExternalLink } from 'lucide-react';
 
 const certs = [
   {
-    title: 'ISTQB Certified Tester Foundation Level (CTFL)',
-    issuer: 'International Software Testing Qualifications Board',
+    title: 'AI in Software Testing (Manual & Automation)',
+    issuer: 'Hands-on AI-driven Test Generation & Defect Detection',
     credentialId: 'ISTQB-CTFL-2021-12345',
     year: '2021',
     url: '#',
   },
   {
-    title: 'Certified Selenium Professional',
-    issuer: 'Selenium Academy',
+    title: 'C++ Programming (OOP & Data Structures)',
+    issuer: 'Core Fundamentals, OOP & Logical Problem-Solving',
     credentialId: 'SEL-PRO-2022-67890',
     year: '2022',
     url: '#',
   },
   {
-    title: 'AWS Certified Cloud Practitioner',
-    issuer: 'Amazon Web Services',
+    title: 'Automation Framework Design (Playwright & Playwright MCP)',
+    issuer: 'End-to-End Scalable Test Frameworks',
     credentialId: 'AWS-CCP-2023-11223',
     year: '2023',
     url: '#',
   },
   {
-    title: 'Certified Agile Tester (CAT)',
-    issuer: 'iSQI Group',
+    title: 'Associate Degree in Business Management (ADP)',
+    issuer: 'Riphah International University (2019-2021)',
     credentialId: 'CAT-2023-44556',
     year: '2023',
     url: '#',

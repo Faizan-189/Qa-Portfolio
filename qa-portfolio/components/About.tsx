@@ -28,7 +28,7 @@ export default function About() {
           {/* Left - Bio */}
           <div>
             <p style={{ fontSize: 15, color: '#c0c0c0', lineHeight: 1.8, marginBottom: 32 }}>
-              Software Quality Assurance Engineer with 4+ years of experience in manual and automated testing across web, mobile, and API platforms. Specialized in building scalable test automation frameworks, implementing CI/CD testing pipelines, and ensuring product quality through risk-based testing methodologies. Strong advocate for shift-left testing and continuous quality improvement.
+              Detail-oriented QA Engineer with 4+ years of hands-on experience in quality assurance across web, mobile, and automation-driven environments. Known for a thorough and structured approach to testing that consistently catches critical issues before they reach production. Skilled in building automated test suites, testing AI/Chatbot workflows with Claude Code + Playwright, improving QA processes, and working closely with clients from requirement gathering through to final sign-off.
             </p>
 
             <h3 style={{ fontSize: 16, fontWeight: 700, color: '#fff', marginBottom: 16 }}>Core Competencies</h3>

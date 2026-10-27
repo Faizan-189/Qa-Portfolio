@@ -6,6 +6,9 @@ const categories = ['All Tools', 'Automation', 'API Testing', 'Performance', 'CI
 const tools: { name: string; category: string }[] = [
   { name: 'Selenium WebDriver', category: 'Automation' },
   { name: 'Playwright', category: 'Automation' },
+  { name: 'Playwright MCP', category: 'Automation' },
+  { name: 'Claude Code (AI Testing)', category: 'Automation' },
+  { name: 'Antigravity (AI Automation)', category: 'Automation' },
   { name: 'Cypress', category: 'Automation' },
   { name: 'Appium', category: 'Automation' },
   { name: 'TestNG', category: 'Automation' },
@@ -22,6 +25,8 @@ const tools: { name: string; category: string }[] = [
   { name: 'GitLab CI', category: 'CI/CD' },
   { name: 'Docker', category: 'CI/CD' },
   { name: 'JIRA', category: 'Management' },
+  { name: 'Linear', category: 'Management' },
+  { name: 'Trello', category: 'Management' },
   { name: 'TestRail', category: 'Management' },
   { name: 'Zephyr', category: 'Management' },
   { name: 'Git', category: 'Management' },
@@ -30,6 +35,7 @@ const tools: { name: string; category: string }[] = [
   { name: 'Python', category: 'Languages' },
   { name: 'JavaScript', category: 'Languages' },
   { name: 'SQL', category: 'Languages' },
+  { name: 'C++', category: 'Languages' },
 ];
 
 const methodologies = {
