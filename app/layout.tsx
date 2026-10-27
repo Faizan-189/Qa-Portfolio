@@ -4,7 +4,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'QA Engineer Portfolio | Muhammad Faizan Naeem',
   description: 'Software Quality Assurance Engineer with 4+ years of experience in manual and automated testing across web, mobile, and API platforms.',
-  keywords: 'QA Engineer, Software Testing, Test Automation, Selenium, Playwright, Cypress',
+  keywords: 'QA Engineer, Software Testing, Test Automation, Playwright, Playwright MCP, Appium, Postman, Quality Assurance',
 };
 
 export default function RootLayout({

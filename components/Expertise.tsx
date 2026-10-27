@@ -4,26 +4,26 @@ const expertiseData = [
   {
     icon: <FileCheck size={22} color="#2563eb" />,
     title: 'Manual Testing',
-    description: 'Comprehensive test case design, exploratory testing, regression testing, and UAT coordination. Expert in black-box, white-box, and grey-box testing methodologies.',
-    tags: ['Test Case Design', 'Exploratory Testing', 'Regression Testing', 'UAT', 'Boundary Value Analysis', 'Equivalence Partitioning'],
+    description: 'Comprehensive test case design, functional testing, regression testing, smoke & sanity testing, and exploratory testing across web and mobile platforms.',
+    tags: ['Functional Testing', 'Regression Testing', 'Smoke & Sanity', 'Exploratory Testing', 'Test Case Design', 'UAT'],
   },
   {
     icon: <Code2 size={22} color="#2563eb" />,
     title: 'Automation Testing',
-    description: 'Building robust test automation frameworks using Selenium, Playwright, and Cypress. Data-driven and keyword-driven testing with POM design patterns.',
-    tags: ['Selenium WebDriver', 'Playwright', 'Cypress', 'TestNG', 'JUnit', 'Page Object Model', 'Data-Driven Testing'],
+    description: 'Building robust test automation frameworks using Playwright and Playwright MCP. AI-assisted test automation with Claude Code and Antigravity.',
+    tags: ['Playwright', 'Playwright MCP', 'Claude Code', 'Antigravity', 'Automation Framework Design', 'E2E Testing'],
   },
   {
     icon: <Database size={22} color="#2563eb" />,
     title: 'API Testing',
-    description: 'REST and SOAP API validation using Postman, RestAssured, and automated contract testing. Performance and security testing for API endpoints.',
-    tags: ['Postman', 'RestAssured', 'Newman', 'API Contract Testing', 'JSON/XML Validation', 'Authentication Testing'],
+    description: 'REST API validation using Postman, request/response validation, status code verification, and endpoint reliability testing.',
+    tags: ['REST API Testing', 'Postman', 'Request/Response Validation', 'Endpoint Testing', 'JSON Validation'],
   },
   {
     icon: <Activity size={22} color="#2563eb" />,
-    title: 'Performance & CI/CD',
-    description: 'Basic performance testing with JMeter, load testing strategies, and integration of automated tests into CI/CD pipelines using Jenkins and GitHub Actions.',
-    tags: ['JMeter', 'Jenkins', 'GitHub Actions', 'Docker', 'Test Reporting', 'Continuous Testing'],
+    title: 'Web & Mobile Testing',
+    description: 'Cross-browser testing, mobile application testing on iOS and Android with Appium, and performance testing using JMeter.',
+    tags: ['Mobile App Testing', 'Appium', 'Cross-Browser Testing', 'UI/UX Testing', 'JMeter', 'Agile/Scrum'],
   },
 ];
 
