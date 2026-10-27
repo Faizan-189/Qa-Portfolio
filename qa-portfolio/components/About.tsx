@@ -1,8 +1,8 @@
 import { Target, Award, TrendingUp, Users } from 'lucide-react';
 
 const stats = [
-  { icon: <Target size={24} color="#2563eb" />, value: '5+ years', label: 'Experience' },
-  { icon: <Award size={24} color="#2563eb" />, value: '40+', label: 'Projects Tested' },
+  { icon: <Target size={24} color="#2563eb" />, value: '4+ years', label: 'Experience' },
+  { icon: <Award size={24} color="#2563eb" />, value: '60+', label: 'Projects Tested' },
   { icon: <TrendingUp size={24} color="#2563eb" />, value: '2500+', label: 'Bugs Identified' },
   { icon: <Users size={24} color="#2563eb" />, value: '85%', label: 'Automation Coverage' },
 ];
@@ -28,7 +28,7 @@ export default function About() {
           {/* Left - Bio */}
           <div>
             <p style={{ fontSize: 15, color: '#c0c0c0', lineHeight: 1.8, marginBottom: 32 }}>
-              Software Quality Assurance Engineer with 5+ years of experience in manual and automated testing across web, mobile, and API platforms. Specialized in building scalable test automation frameworks, implementing CI/CD testing pipelines, and ensuring product quality through risk-based testing methodologies. Strong advocate for shift-left testing and continuous quality improvement.
+              Software Quality Assurance Engineer with 4+ years of experience in manual and automated testing across web, mobile, and API platforms. Specialized in building scalable test automation frameworks, implementing CI/CD testing pipelines, and ensuring product quality through risk-based testing methodologies. Strong advocate for shift-left testing and continuous quality improvement.
             </p>
 
             <h3 style={{ fontSize: 16, fontWeight: 700, color: '#fff', marginBottom: 16 }}>Core Competencies</h3>

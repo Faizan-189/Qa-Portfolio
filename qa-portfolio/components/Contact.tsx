@@ -33,9 +33,9 @@ export default function Contact() {
             <h3 style={{ fontSize: 16, fontWeight: 700, color: '#fff', marginBottom: 24 }}>Contact Information</h3>
 
             {[
-              { icon: <Mail size={18} color="#2563eb" />, text: 'alex.morgan@example.com', href: 'mailto:alex.morgan@example.com' },
-              { icon: <Phone size={18} color="#2563eb" />, text: '+1 (555) 123-4567', href: 'tel:+15551234567' },
-              { icon: <MapPin size={18} color="#2563eb" />, text: 'San Francisco, CA', href: null },
+              { icon: <Mail size={18} color="#2563eb" />, text: 'faizannaeem095@gmail.com', href: 'mailto:faizannaeem095@gmail.com' },
+              { icon: <Linkedin size={18} color="#2563eb" />, text: 'linkedin.com/in/faizan-naeem-', href: 'https://linkedin.com/in/faizan-naeem-' },
+
             ].map((item) => (
               <div key={item.text} style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 20 }}>
                 <div style={{

@@ -11,7 +11,7 @@ export default function Footer() {
           {'<QA />'}
         </span>
         <span style={{ fontSize: 13, color: '#555' }}>
-          © {new Date().getFullYear()} Alex Morgan. All rights reserved.
+          © {new Date().getFullYear()} QA Engineer Portfolio. All rights reserved.
         </span>
         <span style={{ fontSize: 13, color: '#555' }}>
           Built with Next.js

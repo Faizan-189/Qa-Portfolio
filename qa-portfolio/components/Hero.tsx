@@ -1,5 +1,5 @@
 'use client';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle, Clock } from 'lucide-react';
 
 export default function Hero() {
   const scrollTo = (id: string) => {
@@ -81,8 +81,8 @@ export default function Hero() {
             {/* Stats row */}
             <div style={{ display: 'flex', gap: 48, flexWrap: 'wrap' }}>
               {[
-                { icon: <CheckCircle size={18} color="#2563eb" />, label: 'Experience', value: '5+ Years' },
-                { icon: <CheckCircle size={18} color="#2563eb" />, label: 'Projects Tested', value: '40+' },
+                { icon: <Clock size={18} color="#2563eb" />, label: 'Experience', value: '4+ Years' },
+                { icon: <CheckCircle size={18} color="#2563eb" />, label: 'Projects Tested', value: '60+' },
               ].map((stat) => (
                 <div key={stat.label} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
                   <div style={{ marginTop: 2 }}>{stat.icon}</div>

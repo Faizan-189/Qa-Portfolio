@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'QA Engineer Portfolio | Alex Morgan',
-  description: 'Software Quality Assurance Engineer with 5+ years of experience in manual and automated testing across web, mobile, and API platforms.',
+  title: 'QA Engineer Portfolio | Muhammad Faizan Naeem',
+  description: 'Software Quality Assurance Engineer with 4+ years of experience in manual and automated testing across web, mobile, and API platforms.',
   keywords: 'QA Engineer, Software Testing, Test Automation, Selenium, Playwright, Cypress',
 };
 
